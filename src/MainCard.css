@@ -1,0 +1,119 @@
+.main-card-container {
+    width: 1094px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    /* Esto hace que la card se ajuste al alto de la pantalla */
+}
+
+.options-container {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.option {
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.highlighted {
+    display: flex;
+    height: 14px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 90px;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 8px;
+    background-color: #6F757C;
+    /* Cambia el color de fondo de la opción resaltada */
+    color: #fff;
+    /* Cambia el color del texto de la opción resaltada */
+}
+
+
+.text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1
+}
+
+.main-card-content {
+    margin-top: 100px;
+    height: max-content;
+    position: relative;
+    width: 1094px;
+    text-align: center;
+    background-color: #1B1D1F;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-card-content h2 {
+    position: relative;
+    z-index: 2;
+    margin-top: 62px;
+    font-size: 32px;
+    margin-bottom: 1px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+.vector-graphic {
+    width: 243px;
+    z-index: 0;
+    position: absolute;
+    /* Establece la posición absoluta */
+    top: 27px;
+    /* Coloca el elemento 10px desde la parte superior */
+    left: 546px;
+    /* Coloca el elemento 10px desde la izquierda */
+}
+
+.main-card-content p {
+    margin-bottom: 5px;
+    z-index: 4;
+    max-width: 480px;
+    margin-top: 5px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #6F757C;
+    font-size: 16px;
+}
+
+.small-cards-grid {
+    margin-bottom: 70px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    /* Define las columnas de la cuadrícula */
+    column-gap: 13px;
+    row-gap: 60px;
+    /* Espacio entre las tarjetas */
+}

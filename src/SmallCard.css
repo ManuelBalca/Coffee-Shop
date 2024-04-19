@@ -1,0 +1,123 @@
+/* SmallCard.css */
+
+.small-card {
+    width: 260px;
+    /* Ancho de cada pequeña card */
+    border: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+
+    grid-area: 1 / 1 / 6 / 4;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 4 / 6 / 6;
+}
+
+.popular-label {
+    letter-spacing: 0.8px;
+    color: black;
+    font-size: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: #ffcc00;
+    padding: 3px 9px;
+    border-radius: 15px;
+}
+
+.item-image {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Imagen ocupa todo el ancho de la pequeña card */
+    height: auto;
+    /* Altura ajustada automáticamente */
+    border-radius: 8px;
+}
+
+.item-name {
+    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.item-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 27px;
+    width: 54px;
+    color: black;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #BEE3CC;
+    letter-spacing: 0.8px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+}
+
+.item-rating {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.star-icon {
+    width: 20px;
+    /* Tamaño de la imagen de la estrella */
+    height: auto;
+    margin-right: 5px;
+}
+
+.unavailable-text {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    margin-top: 5px;
+    color: #ED735D;
+    /* Color del texto para producto no disponible */
+}
